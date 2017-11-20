@@ -1,1 +1,164 @@
-Hello World
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Certificate Authority Authorization (CAA) Research Study</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<style>
+/* Bootstrap overrides */  
+body {
+  /*min-height: 1000px;*/
+  padding-top: 70px;
+}
+
+.navbar-default {
+  height: 65px;
+}
+
+.navbar-default 
+.navbar-brand {
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 65px;
+  font-size: 18pt;
+}
+
+.navbar-nav > li > a {
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 65px;
+  font-size: 14pt;
+}
+
+</style>
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/data.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+<!-- Additional files for the Highslide popup effect -->
+<script src="https://www.highcharts.com/media/com_demo/js/highslide-full.min.js"></script>
+<script src="https://www.highcharts.com/media/com_demo/js/highslide.config.js" charset="utf-8"></script>
+<link rel="stylesheet" type="text/css" href="https://www.highcharts.com/media/com_demo/css/highslide.css" />
+
+<script>
+	// Get the CSV and create the chart
+	$.getJSON('data.json', function (chart) {
+		Highcharts.chart('plot', chart);
+	});
+</script>
+
+
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//puma2.inet.tu-berlin.de/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '9']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
+
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container"> 
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+              <a href="index.html" class="navbar-brand">CAA Study</a> 
+          </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav ">
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#adoption">CAA Adoption</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                  <li><a href="#partner">Partner</a></li>
+              </ul>    
+              <!--<ul class="nav navbar-nav navbar-right">
+		<li class="mylogo"><a><img src="TU_Muenchen_Logo.svg" height=40px"/></a>&nbsp;</li>
+		<li class="mylogo"><a><img src="rwth_comsys_bild_rgb.svg" height="40px"/></a>&nbsp;</li>
+		<li class="mylogo"><a><img src="Usyd_new_logo.png" height="40px"/></a>&nbsp;</li>
+		<li class="mylogo"><a><img src="neu.png" height="40px"/></a></li>
+	</ul>-->
+          </div>
+          <!-- /.navbar-collapse --> 
+      </div>
+      <!-- /.container --> 
+  </nav>
+
+    <div class="container">
+
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+
+        <div class="page-header">
+	<h2 id="about">About this Study</h2>
+	<p>Shaken by severe compromise, the Web PKI has seen the addition of several security mechanism over the past years.
+	One such mechanism is the Certificate Authority Authorization (CAA) DNS records type.
+	The CAA record allows DNS domain name holders to control the set of Certificate Authorities (CA) that are allowed to issue digital certificates for a domain.
+	After standardization as RFC 6844 and adoption by the CA/B forum, adherence to this record has become mandatory for the CA/B member CAs on September 8, 2017.</p>
+
+	<p>The success of CAA will hinge on three actors, which we investigate in this study:
+	The patchy adherence of CAs, the encouraging but error-prone ways in which domain name holders configure CAA records, and the handful DNS operators that even enable their customers to configure CAA records.
+	Using historic CAA data, we uncover anomalies in issued certificates, and suggest several ways to improve the security impact of CAA.
+	Dissemination of our results to the community has led to specific improvements at several CAs and revocation of mis-issued certificates. We commit to reproducible research and share raw data and analyses tools.
+	</p>
+
+        <h2 id="adoption">CAA Adoption</h2>
+	<div id="plot" style="min-width: 310px; height: 500px; margin: 0 auto"></div>
+	<p>We perform regular scans of >190M domains for CAA support and show their CAA adoption above.</p>
+
+	<h2 id="contact">Contact</h2>
+	<p><b>caa</b> [AT] <b>list.net.in.tum.de</b></p>
+
+	<h2 id="partner">Partner</h2>
+	<div class="row">
+		<div class="col-lg-3" align="center">
+			<img src="TU_Muenchen_Logo.svg" height=60px"/>
+		</div>
+		<div class="col-lg-3" align="center">
+			<img src="rwth_comsys_bild_rgb.svg" height="60px"/>
+		</div>
+		<div class="col-lg-3" align="center">
+			<img src="Usyd_new_logo.png" height="60px"/>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-3" align="center">
+			<img src="UTEN.png" height="40px"/>
+		</div>
+		<div class="col-lg-3" align="center">
+			<img src="snlogo.png" height="40px"/>
+		</div>
+		<div class="col-lg-3" align="center">
+			<img src="neu.png" height="40px"/>
+		</div>
+	</div>
+</div>
+	
+    </div>  <!-- col -->
+  </div>  <!-- row -->
+
+    </div> <!-- /container -->
+
+</body>
+</html>
