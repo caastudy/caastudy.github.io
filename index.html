@@ -54,6 +54,12 @@ body {
 	$.getJSON('runup.json', function (chart) {
 		Highcharts.chart('plot', chart);
 	});
+  $.getJSON('effectiveness.json', function (chart) {
+    Highcharts.chart('plot2', chart);
+  });
+  $.getJSON('broken.json', function (chart) {
+    Highcharts.chart('plot3', chart);
+  });
 </script>
 
 
@@ -62,20 +68,21 @@ body {
 <body>
 
   <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container"> 
+      <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
-              <a href="index.html" class="navbar-brand">CAA Study</a> 
+              <a href="index.html" class="navbar-brand">CAA Study</a>
           </div>
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav ">
                   <li><a href="#about">About</a></li>
-                  <li><a href="#adoption">CAA Adoption</a></li>
+                  <li><a href="#adoption">Plots</a></li>
+                  <li><a href="#adoption"></a></li>
                   <li><a href="#issuanceexp">Issuance Experiment</a></li>
                   <li><a href="#contact">Contact</a></li>
                   <li><a href="#partner">Partner</a></li>
-              </ul>    
+              </ul>
               <!--<ul class="nav navbar-nav navbar-right">
 		<li class="mylogo"><a><img src="TU_Muenchen_Logo.svg" height=40px"/></a>&nbsp;</li>
 		<li class="mylogo"><a><img src="rwth_comsys_bild_rgb.svg" height="40px"/></a>&nbsp;</li>
@@ -83,9 +90,9 @@ body {
 		<li class="mylogo"><a><img src="neu.png" height="40px"/></a></li>
 	</ul>-->
           </div>
-          <!-- /.navbar-collapse --> 
+          <!-- /.navbar-collapse -->
       </div>
-      <!-- /.container --> 
+      <!-- /.container -->
   </nav>
 
     <div class="container">
@@ -103,7 +110,7 @@ gives domain holders control over which Certificate Authorities
 (CA) may issue digital certificates for their domain. After
 standardization as RFC 6844 and adoption by the CA/B
 forum, checking of this record became mandatory for member
-CAs on Sep. 8, 2017.
+CAs on Sep. 8, 2017.</br
 The success of CAA hinges on the behavior of three actors:
 CAs, domain name holders and DNS operators. We empirically
 study their behavior, and observe that CAs exhibit
@@ -119,8 +126,16 @@ work, we suggest ways to improve the security impact of CAA.
 To foster further improvements and to practice reproducible
 research, we share raw data and analysis tools.
         <h2 id="adoption">CAA Adoption</h2>
-	<div id="plot" style="min-width: 310px; height: 500px; margin: 0 auto"></div>
+	<div id="plot" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 	<p>We perform regular scans of >200M domains for CAA support and show their CAA adoption above.</p>
+
+  <h2 id="adoption">CAA Tag Use</h2>
+  <div style="margin: auto">
+    <div id="plot2" style="width: 49%; height: 350px; margin: 0 auto; float:left"></div>
+    <div id="plot3" style="width: 49%; height: 350px; margin-left: 1px; float:right"></div>
+    <div style="width: 100%; height: 1px; background-color: white; clear:both">-</div>
+    <p>These figures show the use of CAA tags by base domains.</p>
+</div>
 
   <h2 id="issuanceexp">Issuance Experiment</h2>
   The results from our issuance experiment can be found under <a href="https://github.com/quirins/caa-test">https://github.com/quirins/caa-test</a>.
@@ -135,7 +150,7 @@ research, we share raw data and analysis tools.
 	<h2 id="partner">Partner</h2>
 	<div class="row">
 		<div class="col-lg-3" align="center">
-			<img src="TU_Muenchen_Logo.svg" height=60px"/>
+			<img src="TU_Muenchen_Logo.svg" height="60px"/>
 		</div>
 		<div class="col-lg-3" align="center">
 			<img src="rwth_comsys_bild_rgb.svg" height="60px"/>
