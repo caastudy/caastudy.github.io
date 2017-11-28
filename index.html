@@ -60,6 +60,10 @@ body {
   $.getJSON('broken.json', function (chart) {
     Highcharts.chart('plot3', chart);
   });
+  $.getJSON('incs.json', function (chart) {
+    Highcharts.chart('plot4', chart);
+  });
+
 </script>
 
 
@@ -136,6 +140,10 @@ research, we share raw data and analysis tools.
     <div style="width: 100%; height: 1px; background-color: white; clear:both">-</div>
     <p>These figures show the use of CAA tags by base domains.</p>
 </div>
+<h2 id="adoption">CAA name server inconsistencies</h2>
+<div id="plot4" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+<p># of domains that return inconsistent CAA configurations across their authoritative name servers.</p>
+
 
   <h2 id="issuanceexp">Issuance Experiment</h2>
   The results from our issuance experiment can be found under <a href="https://github.com/quirins/caa-test">https://github.com/quirins/caa-test</a>.
