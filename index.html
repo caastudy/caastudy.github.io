@@ -137,7 +137,9 @@ Note: We have removed some invalid data points, for example in early December. T
 	<div id="plot" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 	<p>We perform regular scans of &gt;200M domains for CAA support and show their CAA adoption above. <br>
     <small><b>Anomalies:</b> The peak in "TUM-DETAIL with CAA or CNAME2CAA" in early November stems from a hoster enabling CAA on its base domain, to which about 15k customer domains point. <br>The jump in early February also stems from 2 hosters enabling CAA on its base domain, with 60k and 57k base domains pointing to it via CNAME. <br>
-    Starting February 9, 2018, we are also removing domain names of the pattern google[a-f0-9]{16}.sld.publicsuffix from our scan. These are used to assert domain DNS control by google by placing such as CNAME that points to google.com (see <a href="https://support.google.com/a/answer/47283">here</a>. As google.com deploys CAA, these base domains were counted as deploying CAA, which they are effectively not.
+    Starting February 9, 2018, we are also removing domain names of the pattern google[a-f0-9]{16}.sld.publicsuffix from our scan. 
+These are used to assert domain DNS control by google by placing such as CNAME that points to google.com (see <a href="https://support.google.com/a/answer/47283">here</a>). 
+As google.com deploys CAA, these base domains were counted as deploying CAA, which they are effectively not.
 </small></p>
 
   <h2 id="tagflag">CAA Flag and Tag Use</h2>
