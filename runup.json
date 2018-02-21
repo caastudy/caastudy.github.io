@@ -1228,10 +1228,6 @@
     [
      1519027200000,
      107096
-    ],
-    [
-     1519113600000,
-     96377
     ]
    ],
    "name": "TUM-ZONE Basedomain with CAA or CNAME2CAA"
@@ -2441,10 +2437,6 @@
     [
      1519027200000,
      105204
-    ],
-    [
-     1519113600000,
-     94676
     ]
    ],
    "name": "TUM-ZONE Basedomain with CAA"
