@@ -107,28 +107,29 @@ body {
         <div class="page-header">
 	<h2 id="about">About this Study</h2>
 Shaken by severe compromises, the Web’s Public Key Infrastructure
-(PKI) has seen the addition of several security
-mechanisms over recent years. One such mechanism is the
-Certification Authority Authorization (CAA) DNS record, that
-gives domain holders control over which Certification Authorities
-(CA) may issue digital certificates for their domain. After
-standardization as RFC 6844 and adoption by the CA/B
-forum, checking of this record became mandatory for member
-CAs on Sep. 8, 2017.</br>
+has seen the addition of several security mechanisms
+over recent years. One such mechanism is the Certification Authority
+Authorization (CAA) DNS record, that gives domain
+name holders control over which Certification Authorities
+(CAs) may issue certificates for their domain. First defined
+in RFC 6844, adoption by the CA/B forum mandates that
+CAs validate CAA records as of September 8, 2017.
+<br>
 The success of CAA hinges on the behavior of three actors:
-CAs, domain name holders and DNS operators. We empirically
+CAs, domain name holders, and DNS operators. We empirically
 study their behavior, and observe that CAs exhibit
 patchy adherence in issuance experiments, domain name holders
 configure CAA records in encouraging but error-prone
-ways, and only 4 of the large DNS operators enable customers
-to configure CAA records. Furthermore, using historic CAA
-data, we uncover anomalies in already issued certificates.
+ways, and only six of the 31 largest DNS operators enable customers
+to add CAA records. Furthermore, using historic CAA
+data, we uncover anomalies for already-issued certificates.
 We disseminated our results in the community. This has
 already led to specific improvements at several CAs and
 revocation of mis-issued certificates. Furthermore, in this
 work, we suggest ways to improve the security impact of CAA.
 To foster further improvements and to practice reproducible
-research, we share raw data and analysis tools.<br><br>
+research, we share raw data and analysis tools.
+<br><br>
 <h2>Paper Download</h2>
 <a href="https://www.net.in.tum.de/fileadmin/bibtex/publications/papers/caa17.pdf"><b>&raquo; Paper download &laquo;</b></a>
         <h2 id="adoption">CAA Adoption</h2>
