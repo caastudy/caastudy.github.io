@@ -3476,6 +3476,10 @@
     [
      1539909840000,
      445358
+    ],
+    [
+     1539996300000,
+     447408
     ]
    ],
    "name": "TUM-DETAIL Basedomains with Issue or Issuewild"
@@ -6933,6 +6937,10 @@
     [
      1539909840000,
      440573
+    ],
+    [
+     1539996300000,
+     442601
     ]
    ],
    "name": "TUM-DETAIL Basedomains with issue tag"
@@ -10390,6 +10398,10 @@
     [
      1539909840000,
      219143
+    ],
+    [
+     1539996300000,
+     220450
     ]
    ],
    "name": "TUM-DETAIL Basedomains with issuewild tag"
@@ -13847,6 +13859,10 @@
     [
      1539909840000,
      87075
+    ],
+    [
+     1539996300000,
+     87167
     ]
    ],
    "name": "TUM-DETAIL Basedomains with iodef tag"
