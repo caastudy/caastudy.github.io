@@ -146,6 +146,8 @@ Note: We have removed some invalid data points, for example in early December an
     Starting February 9, 2018, we are also removing domain names of the pattern google[a-f0-9]{16}.sld.publicsuffix from our scan. 
 These are used to assert domain DNS control by google by placing such as CNAME that points to google.com (see <a href="https://support.google.com/a/answer/47283">here</a>). 
 As google.com deploys CAA, these base domains were counted as deploying CAA, which they are effectively not.
+<br>
+The fluctuations in October 2018 stem from on/off rate-limiting issues at nazwa.pl, which hosts about 200k CAA-enabled base domains.
 </small></p>
 
   <h2 id="tagflag">CAA Flag and Tag Use</h2>
