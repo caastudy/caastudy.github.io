@@ -2172,6 +2172,10 @@
     [
      1541923200000,
      484840
+    ],
+    [
+     1542009600000,
+     494941
     ]
    ],
    "name": "TUM-ZONE Basedomain with CAA or CNAME2CAA"
@@ -4309,6 +4313,10 @@
     [
      1541923200000,
      472241
+    ],
+    [
+     1542009600000,
+     482295
     ]
    ],
    "name": "TUM-ZONE Basedomain with CAA"
@@ -7818,6 +7826,10 @@
     [
      1541901720000,
      1047453
+    ],
+    [
+     1541988120000,
+     1063415
     ]
    ],
    "name": "TUM-DETAIL Basedomain with CAA or CNAME2CAA"
@@ -11327,6 +11339,10 @@
     [
      1541901720000,
      871993
+    ],
+    [
+     1541988120000,
+     888479
     ]
    ],
    "name": "TUM-DETAIL Basedomain with CAA"
