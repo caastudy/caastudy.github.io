@@ -3968,6 +3968,10 @@
     [
      1555887780000,
      65420
+    ],
+    [
+     1556060700000,
+     82393
     ]
    ],
    "name": "TUM-DETAIL Basedomains with a reserved flag"
@@ -7877,6 +7881,10 @@
     [
      1555887780000,
      14
+    ],
+    [
+     1556060700000,
+     15
     ]
    ],
    "name": "TUM-DETAIL Basedomains with decode error"
@@ -11786,6 +11794,10 @@
     [
      1555887780000,
      220
+    ],
+    [
+     1556060700000,
+     253
     ]
    ],
    "name": "TUM-DETAIL Basedomains with unknown CAA tag"
@@ -15694,6 +15706,10 @@
     ],
     [
      1555887780000,
+     12
+    ],
+    [
+     1556060700000,
      12
     ]
    ],
