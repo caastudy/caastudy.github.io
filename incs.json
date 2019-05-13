@@ -3984,6 +3984,10 @@
     [
      1557443100000,
      8008
+    ],
+    [
+     1557529440000,
+     8265
     ]
    ],
    "name": "TUM-DETAIL basedomains with inconsistent name servers"
@@ -7949,6 +7953,10 @@
     [
      1557443100000,
      3392
+    ],
+    [
+     1557529440000,
+     3634
     ]
    ],
    "name": "TUM-DETAIL basedomains with NODATA/CAA inconsistency"
@@ -11914,6 +11922,10 @@
     [
      1557443100000,
      96
+    ],
+    [
+     1557529440000,
+     102
     ]
    ],
    "name": "TUM-DETAIL basedomains with CNAME inconsistency"
@@ -15879,6 +15891,10 @@
     [
      1557443100000,
      4544
+    ],
+    [
+     1557529440000,
+     4551
     ]
    ],
    "name": "TUM-DETAIL basedomains with CAA record inconsistency"
@@ -19844,6 +19860,10 @@
     [
      1557443100000,
      76
+    ],
+    [
+     1557529440000,
+     82
     ]
    ],
    "name": "TUM-DETAIL basedomains with NXDOMAIN/CAA inconsistency"
